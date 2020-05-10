@@ -1,0 +1,22 @@
+\thisfloatsetup{
+  capbesidewidth=\marginparwidth,}
+\begin{table}[htbp]
+\centering
+{\small
+%\sansmath
+\arrayrulecolor{white}
+\renewcommand{\arraystretch}{1.5}
+\vspace{0.2cm}
+\rowcolors{2}{halfgray!15}{halfgray!5}
+\setlength{\extrarowheight}{.4em}
+\begin{tabular}{cccc}		
+\rowcolor{mycolor}\color{white}{\textbf{Resultado}} & \color{white}{\textbf{Área Lateral}} & \color{white}{\textbf{Área Base}} & \color{white}{\textbf{Área Total}}\\
+Triangular & \(3\cdot \ell \cdot h\) & \(\dfrac{\ell^2 \cdot \sqrt{3}}{2}\) &  \(3\cdot \ell \cdot h+\ell^2\cdot \sqrt{3}\)\\
+Cuadrada & \(4\cdot \ell \cdot h\) & \(\ell^2\) & \(4\cdot \ell \cdot h+2\cdot \ell^2\) \\
+Rectangular & \(2\left(a\cdot h + b\cdot h\right)\) & \(a\cdot b\) & \(2\left(a\cdot h + b\cdot h + a\cdot b\right)\) \\
+\end{tabular}
+}
+		\caption[Fórmulas para áreas de Prismas]{Fórmulas para las distintas áreas de los Prismas.} 
+		\label{tab:formprismas}
+\vspace{0.2cm}
+\end{table}

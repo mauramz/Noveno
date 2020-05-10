@@ -1,0 +1,22 @@
+\thisfloatsetup{
+  capbesidewidth=\marginparwidth,}
+\begin{table}[htbp]
+\centering
+{\small
+%\sansmath
+\arrayrulecolor{white}
+\renewcommand{\arraystretch}{1.5}
+\vspace{0.2cm}
+\rowcolors{2}{halfgray!15}{halfgray!5}
+\setlength{\extrarowheight}{.4em}
+\begin{tabular}{cccc}		
+\rowcolor{mycolor}\color{white}{\textbf{Resultado}} & \color{white}{\textbf{Área Lateral}} & \color{white}{\textbf{Área Base}} & \color{white}{\textbf{Área Total}}\\
+Base Triangular & \(3\cdot \dfrac{\ell \cdot A_p}{2}\) & \(\dfrac{\ell^2 \cdot \sqrt{3}}{2}\) &  \(3\cdot \dfrac{\ell \cdot A_p}{2}+\dfrac{\ell^2 \cdot \sqrt{3}}{2}\)\\
+Base Cuadrada & \(2\cdot \ell \cdot A_p\) & \(\ell^2\) & \(2\cdot \ell \cdot A_p+\ell^2\) \\
+Base Rectangular & \(a\cdot A_a + b\cdot A_b\) & \(a\cdot b\) & \(a\cdot A_a + b\cdot A_b + a\cdot b\) \\
+\end{tabular}
+}
+		\caption[Fórmulas para áreas de Pirámides]{Fórmulas para las distintas áreas de la Pirámides.} 
+		\label{tab:formespacio}
+\vspace{0.2cm}
+\end{table}

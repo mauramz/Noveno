@@ -1,0 +1,254 @@
+\documentclass[draft=false, paper=letterpaper, paper=portrait, pagesize=auto, fontsize=12pt, version=last,
+   spanish]{scrbook}
+
+\usepackage{fontspec}
+\usepackage[math]{blindtext}
+\usepackage{multicol}
+\newcommand{\sen}{\operatorname{\sen}}
+
+\setmainfont{Minion Pro Display}[
+  ItalicFont={Minion Pro Italic},
+  BoldFont={Minion Pro Bold},
+  BoldItalicFont={Minion Pro Bold Italic}]
+
+\setsansfont{Myriad Pro}[
+  ItalicFont={Myriad Pro Italic},
+  BoldFont={Myriad Pro Bold},
+  BoldItalicFont={Myriad Pro Bold Italic}]
+
+\usepackage{multicol}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Must be loaded first!
+\usepackage[utf8]{inputenc}
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% packages required for the template
+\usepackage{atveryend} % must be loaded before etoolbox. (bugfix for pageslts)
+\usepackage{codesection}
+\usepackage{templatetools}
+%\raggedbottom 
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% encoding
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% automatic selection of encoding
+% insert chars for umlaut a and sz
+\usepackage{selinput}
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% preamble
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%% load packages
+\input{preamble/packages}
+%% apply style settings
+\input{preamble/style.tex}
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Configurations
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%%% Switch between colored links (web) and black links (print)
+\IfDefined{UseDefinition}{%
+  \UseDefinition{Target}{Print}
+  %\UseDefinition{Target}{Web}
+}% end of UseDefinition
+\IfPackageLoaded{hyperref}{%
+%%% set layout of PDF pages
+\hypersetup{pdfpagelayout=OneColumn}
+  % options:
+  %  SinglePage     Displays a single page; advancing flips the page
+  %  OneColumn      Displays the document in one column; continuous scrolling.
+  %  TwoColumnLeft  Displays the document in two columns, 
+  %                 odd-numbered pages to the left.
+  %  TwoColumnRight Displays the document in two columns, 
+  %                 odd-numbered pages to the right.
+  %  TwoPageLeft    Displays two pages, odd-numbered pages to the left 
+  %  TwoPageRight   Displays two pages, odd-numbered pages to the right 
+}% (end of hyperref)
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% custom definitions
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%%% Hyphenation (Silbentrennung)
+%\input{content/hyphenation.tex}
+% Vermeidung von Hurenkindern (sic!) und Schusterkindern (sic!)
+\clubpenalty = 500
+\widowpenalty = 1000
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% execute necessary commands
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% (... if the according package is loaded or not)
+\listfiles % list all loaded files at end of document
+\usepackage{truncate}
+%\usepackage{upgreek}
+%
+\input{preamble/makeCommands}
+%% document content %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\makeatother
+\makeatletter                        
+\providecommand*{\toclevel@chapterinfo}{2}%    
+\makeatother  
+\usetikzlibrary{shadings}
+\usetikzlibrary{3d,calc}
+\usetikzlibrary{shapes.misc}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{external}
+\usepackage{tkz-euclide}
+\tikzexternalize % activate!
+ \DeclareSIUnit\atmosphere{atm}
+ \DeclareFloatVCode{flushup}%
+ {\vskip-1.2cm}
+  \DeclareFloatVCode{flushupp}%
+  {\vskip-5.8cm}
+ \usepackage[version=4,arrows=pgf-filled]{mhchem}
+\tikzset{cross/.style={cross out, draw=mycolor2, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
+\newcommand{\midarrowr}{\tikz \draw[->,>={Triangle[length=0pt 3*3,width=0pt 3]},mycolor4, thick] (0,0) -- +(.1,0);}
+\newcommand{\midarrow}{\tikz \draw[->,>={Triangle[length=0pt 3*3,width=0pt 3]},mycolor, thick] (0,0) -- +(.1,0);}
+\robustify\setcounter
+\robustify\addtocounter
+\robustify\setlength
+\robustify\addtolength
+\usetikzlibrary{external}
+\usetikzlibrary{mindmap}
+\tikzexternaldisable
+\newcolumntype{F}{>{\RaggedRight\let\newline\\\hspace{0pt}}X}
+
+%\tikzexternalise
+%%% document start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{newtxmath}
+\usepackage[backend=biber,style=apa]{biblatex}
+\DeclareLanguageMapping{spanish}{spanish-apa}
+\addbibresource{bib/bibliography.bib}
+
+\usepackage[most]{tcolorbox}
+\newtcolorbox{micaja}[1]{%
+    colback=mycolor!15!white,
+    coltitle=white,
+    colframe=mycolor!45!white,
+    fonttitle=\sffamily\bfseries,
+    %fontupper=\sffamily,
+    title=#1, 
+    sharp corners,
+    boxrule=0pt,
+    enhanced}
+
+\makeatletter
+% fullwidth environment, text across textwidth+marginparsep+marginparwidth
+\newlength{\overhang}
+\setlength{\overhang}{\marginparwidth}
+\addtolength{\overhang}{\marginparsep}
+%
+\newenvironment{fullwidth}
+  {\ifthenelse{\boolean{@twoside}}%
+     {\begin{adjustwidth*}{}{-\overhang}}%
+     {\begin{adjustwidth}{}{-\overhang}}%
+  }%
+  {\ifthenelse{\boolean{@twoside}}%
+    {\end{adjustwidth*}}%
+    {\end{adjustwidth}}%
+  }
+\makeatother
+
+\usepackage{fontawesome5}
+\newcommand{\rs}[1]{\textcolor{mycolor}{\bfseries #1}}    
+    
+    
+\begin{document}
+\pgfplotscreateplotcyclelist{mycolor white}{%
+only marks, every mark/.append style={solid, fill=mycolor}, mark=*\\%
+only marks, every mark/.append style={solid, fill=mycolor!75}, mark=square*\\%
+only marks, every mark/.append style={solid, fill=mycolor!50}, mark=otimes*\\%
+ only marks, every mark/.append style={solid, fill=mycolor!25}, mark=triangle*\\%
+only marks, every mark/.append style={solid, fill=mycolor!5},mark=diamond*\\%
+ only marks, every mark/.append style={solid, fill=mycolor2},mark=*\\%
+ only marks, every mark/.append style={solid, fill=mycolor2!75},mark=square*\\%
+only marks, every mark/.append style={solid, fill=mycolor2!50},mark=otimes*\\%
+ only marks,every mark/.append style={solid, fill=mycolor2!25},mark=diamond*\\%
+}
+\pgfplotscreateplotcyclelist{mycolor2 white}{%
+ only marks, every mark/.append style={solid, fill=mycolor2},mark=*\\%
+ only marks, every mark/.append style={solid, fill=mycolor2!75},mark=square*\\%
+only marks, every mark/.append style={solid, fill=mycolor2!50},mark=otimes*\\%
+ only marks,every mark/.append style={solid, fill=mycolor2!25},mark=triangle*\\%
+only marks, every mark/.append style={solid, fill=mycolor2!5}, mark=diamond*\\%
+only marks, every mark/.append style={solid, fill=mycolor!75}, mark=square*\\%
+only marks, every mark/.append style={solid, fill=mycolor!50}, mark=otimes*\\%
+ only marks, every mark/.append style={solid, fill=mycolor!25}, mark=triangle*\\%
+only marks, every mark/.append style={solid, fill=mycolor!5},mark=diamond*\\%
+}
+\pgfplotscreateplotcyclelist{mycolor4 white}{%
+ only marks, every mark/.append style={solid, fill=mycolor4},mark=*\\%
+ only marks, every mark/.append style={solid, fill=mycolor4!75},mark=square*\\%
+only marks, every mark/.append style={solid, fill=mycolor4!50},mark=otimes*\\%
+ only marks,every mark/.append style={solid, fill=mycolor4!25},mark=triangle*\\%
+only marks, every mark/.append style={solid, fill=mycolor4!5}, mark=diamond*\\%
+only marks, every mark/.append style={solid, fill=mycolor!75}, mark=square*\\%
+only marks, every mark/.append style={solid, fill=mycolor!50}, mark=otimes*\\%
+ only marks, every mark/.append style={solid, fill=mycolor!25}, mark=triangle*\\%
+only marks, every mark/.append style={solid, fill=mycolor!5},mark=diamond*\\%
+}
+\pgfplotscreateplotcyclelist{mycolor4 black}{%
+ only marks,each nth point={4}, every mark/.append style={solid, fill=mycolor4},mark=*\\%
+ only marks, each nth point={4},every mark/.append style={solid, fill=mycolor4!75},mark=square*\\%
+only marks,each nth point={3}, every mark/.append style={solid, fill=mycolor4!50},mark=otimes*\\%
+ only marks,each nth point={3},every mark/.append style={solid, fill=mycolor4!25},mark=triangle*\\%
+only marks,each nth point={2}, every mark/.append style={solid, fill=mycolor4!5}, mark=diamond*\\%
+only marks, every mark/.append style={solid, fill=mycolor!75}, mark=square*\\%
+only marks, every mark/.append style={solid, fill=mycolor!50}, mark=otimes*\\%
+ only marks, every mark/.append style={solid, fill=mycolor!25}, mark=triangle*\\%
+only marks, every mark/.append style={solid, fill=mycolor!5},mark=diamond*\\%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\boldPDFchapterstrue
+% Configure page numbering - required for hyperref (not displayed)
+\pagenumbering{alph}\setcounter{page}{1}%
+\pagestyle{empty}
+
+% -- title page --
+
+\input{content/0-Portada}
+
+% -- table of contents --
+
+\frontmatter
+
+\pagestyle{scrplain}
+\addtocontents{toc}{\protect\pagestyle{scrplain}}
+\setcounter{tocdepth}{1}
+\tableofcontents
+\listoffigures
+\listoftables
+\thispagestyle{scrplain}
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+
+\pagestyle{scrheadings} % Print headers again
+
+% --- Main Document --- --- --- --- --- --- ---
+\input{content/100-Prefacio}
+\mainmatter
+\part{Números}
+\input{content/1-numerosreales}
+\input{content/2-calculosestimaciones}
+\input{content/3-cantidades}
+\input{content/4-pgnumeros}
+%\part{Geometría}
+%\input{content/5-Triangulos}
+%\input{content/6-Trigonometria}
+%\input{content/7-Espacio}
+%\input{content/8-pggeometria}
+%\part{Relaciones y Álgebra}
+%\part{Estadística y Probabilidad}
+%%% -- end of main content
+
+% -- bibliography --
+% (must be placed _before_ appendix)
+\boldPDFchapterstrue
+
+\nocite{*}
+\printbibliography
+
+%%% document END %%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

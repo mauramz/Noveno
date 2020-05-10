@@ -1,0 +1,27 @@
+\thisfloatsetup{
+  capbesidewidth=\marginparwidth,}
+\begin{table}[htbp]
+\centering
+\sffamily
+\small
+%\sansmath
+\arrayrulecolor{white}
+\vspace{0.2cm}
+  \rowcolors{2}{halfgray!15}{halfgray!5}
+ \setlength{\extrarowheight}{.4em}
+		\begin{tabularx}{0.99\textwidth}{l*{1}{>{\RaggedRight\arraybackslash}X}}		
+		\rowcolor{mycolor}\multicolumn{1}{l}{{\color{white}\textbf{Simetría en el eje}}}&  \multicolumn{1}{l}{{\color{white}\textbf{Reflexión}}}\\
+	 Vertical \(\,x=a\) & \(P^\prime(2a-x,y)\)\\
+        Sobre el ``eje y'' (\(x=0\)) & \(P^\prime(-x,y)\)\\
+        
+        Horizontal \(\,y=a\) & \(P^\prime(x,2a-y)\)\\
+        Sobre el ``eje x'' (\(y=0\)) & \(P^\prime(x,-y)\)\\
+        
+        Oblicuo \(\,y=x\) & \(P^\prime(y,x)\)\\
+        Oblicuo \(\,y=-x\) & \(P^\prime(-y,-x)\)\\
+
+		\end{tabularx}
+		\caption[Fórmulas de Reflexiones]{Fórmulas de Reflexiones} 
+		\label{tab:formreflexiones}
+\vspace{0.2cm}		
+\end{table}

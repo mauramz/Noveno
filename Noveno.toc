@@ -1,0 +1,10 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {spanish}{}
+\babel@toc {spanish}{}
+\pagestyle {scrplain}
+\contentsline {chapter}{\numberline {\lowercase {}}\texorpdfstring {\MakeLowercase {Índice de figuras}}{Índice de figuras}}{\es@scroman {iii}}{chapter*.2}%
+\contentsline {chapter}{\numberline {\lowercase {}}\texorpdfstring {\MakeLowercase {Índice de cuadros}}{Índice de cuadros}}{\es@scroman {v}}{chapter*.3}%
+\contentsline {chapter}{\numberline {\lowercase {}}\texorpdfstring {\MakeLowercase {Introducción}}{Introducción}}{\es@scroman {vii}}{chapter*.4}%
+\contentsline {chapter}{\numberline {\lowercase {1}}\texorpdfstring {\MakeLowercase {Ejercicios de la Parte Dos}}{Ejercicios de la Parte Dos}}{1}{chapter.1}%
+\contentsline {chapterinfo}{{}\color {halfgray}\itshape Práctica General de la Segunda Parte.}{1}{chapter.1}%
+\contentsfinish 

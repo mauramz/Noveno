@@ -1,0 +1,453 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{Abalsamo2013}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c4285c8b43a3efe9da87a62d77dc4e8c}{%
+           family={Abálsamo},
+           familyi={A\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Buenos Aires, Argentina}%
+      }
+      \list{publisher}{1}{%
+        {Puerto de Palos}%
+      }
+      \strng{namehash}{c4285c8b43a3efe9da87a62d77dc4e8c}
+      \strng{fullhash}{c4285c8b43a3efe9da87a62d77dc4e8c}
+      \strng{bibnamehash}{c4285c8b43a3efe9da87a62d77dc4e8c}
+      \strng{authorbibnamehash}{c4285c8b43a3efe9da87a62d77dc4e8c}
+      \strng{authornamehash}{c4285c8b43a3efe9da87a62d77dc4e8c}
+      \strng{authorfullhash}{c4285c8b43a3efe9da87a62d77dc4e8c}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Activados 3}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{Armenta2009}{book}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=3198a5c2325df0290a33ecb98b6e6049}{%
+           family={Armenta},
+           familyi={A\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1dcda8991bc25afe8d14d116324e2362}{%
+           family={Cadena},
+           familyi={C\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22d13d0c263f0e2098e26f038792a0ca}{%
+           family={Cruz},
+           familyi={C\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49bace541b5095b58322bac45d51c0ae}{%
+           family={Figueroa},
+           familyi={F\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ab8eb663720188f95eb0b02985e0ce9}{%
+           family={Ibarra},
+           familyi={I\bibinitperiod},
+           given={Saúl},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f2c4940a189213881f8eea3c0fd16f8}{%
+           family={Martinez},
+           familyi={M\bibinitperiod},
+           given={Nancy},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a8e7e9e82d28ef83fc9b0e403dcbaf6}{%
+           family={Valencia},
+           familyi={V\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Sonora, México}%
+      }
+      \list{publisher}{1}{%
+        {Cecytes}%
+      }
+      \strng{namehash}{594d337371d6c278f953568ee52a8aca}
+      \strng{fullhash}{3ff1fb1f04f25872c0724978fcda64c6}
+      \strng{bibnamehash}{3ff1fb1f04f25872c0724978fcda64c6}
+      \strng{authorbibnamehash}{3ff1fb1f04f25872c0724978fcda64c6}
+      \strng{authornamehash}{594d337371d6c278f953568ee52a8aca}
+      \strng{authorfullhash}{3ff1fb1f04f25872c0724978fcda64c6}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Álgebra}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{Buritica2010}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=21503bbae501fadfd62e79daf9121448}{%
+           family={Buriticá},
+           familyi={B\bibinitperiod},
+           given={Bernardo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Antioquia, Colombia}%
+      }
+      \list{publisher}{1}{%
+        {Universidad de Antioquia}%
+      }
+      \strng{namehash}{21503bbae501fadfd62e79daf9121448}
+      \strng{fullhash}{21503bbae501fadfd62e79daf9121448}
+      \strng{bibnamehash}{21503bbae501fadfd62e79daf9121448}
+      \strng{authorbibnamehash}{21503bbae501fadfd62e79daf9121448}
+      \strng{authornamehash}{21503bbae501fadfd62e79daf9121448}
+      \strng{authorfullhash}{21503bbae501fadfd62e79daf9121448}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Álgebra y Trigonometría}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{Duenas2008}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=da640fd15368d9af22aeda4d0c136e18}{%
+           family={Dueñas},
+           familyi={D\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2774ea889d0615307829a323131cb135}{%
+           family={Garavito},
+           familyi={G\bibinitperiod},
+           given={Andrés},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=600a9196a59c79f173e696364dc05bf2}{%
+           family={Lara},
+           familyi={L\bibinitperiod},
+           given={Gerardo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Bogotá, Colombia}%
+      }
+      \list{publisher}{1}{%
+        {Grupo Editorial Educar}%
+      }
+      \strng{namehash}{db3c77f3782fe00e078170089c36ad13}
+      \strng{fullhash}{9b002f644c1ab76605c1642c2e4fbfeb}
+      \strng{bibnamehash}{9b002f644c1ab76605c1642c2e4fbfeb}
+      \strng{authorbibnamehash}{9b002f644c1ab76605c1642c2e4fbfeb}
+      \strng{authornamehash}{db3c77f3782fe00e078170089c36ad13}
+      \strng{authorfullhash}{9b002f644c1ab76605c1642c2e4fbfeb}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Áciertos Matemáticos 8}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{Fernandez2016}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ef2a261d78716f234dc965759f21a774}{%
+           family={Fernández},
+           familyi={F\bibinitperiod},
+           given={Andres},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4930687fb396979d98465dbd31aa125a}{%
+           family={Huertas},
+           familyi={H\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Lima, Perú}%
+      }
+      \list{publisher}{1}{%
+        {Lumbreras Editores}%
+      }
+      \strng{namehash}{6c2ab9a2faf51e528c546fa51e328075}
+      \strng{fullhash}{6c2ab9a2faf51e528c546fa51e328075}
+      \strng{bibnamehash}{6c2ab9a2faf51e528c546fa51e328075}
+      \strng{authorbibnamehash}{6c2ab9a2faf51e528c546fa51e328075}
+      \strng{authornamehash}{6c2ab9a2faf51e528c546fa51e328075}
+      \strng{authorfullhash}{6c2ab9a2faf51e528c546fa51e328075}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Álgebra}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{Garza2015}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6a94447a32185193132fcf7cd34dd924}{%
+           family={Garza},
+           familyi={G\bibinitperiod},
+           given={Beatriz},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {México D.F., México}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Educación}%
+      }
+      \strng{namehash}{6a94447a32185193132fcf7cd34dd924}
+      \strng{fullhash}{6a94447a32185193132fcf7cd34dd924}
+      \strng{bibnamehash}{6a94447a32185193132fcf7cd34dd924}
+      \strng{authorbibnamehash}{6a94447a32185193132fcf7cd34dd924}
+      \strng{authornamehash}{6a94447a32185193132fcf7cd34dd924}
+      \strng{authorfullhash}{6a94447a32185193132fcf7cd34dd924}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Geometría y Trigonometría}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{Gray2011}{url}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8430ee655132e7df2a0c659c423fcfc9}{%
+           family={Gray},
+           familyi={G\bibinitperiod},
+           given={Bernardo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8430ee655132e7df2a0c659c423fcfc9}
+      \strng{fullhash}{8430ee655132e7df2a0c659c423fcfc9}
+      \strng{bibnamehash}{8430ee655132e7df2a0c659c423fcfc9}
+      \strng{authorbibnamehash}{8430ee655132e7df2a0c659c423fcfc9}
+      \strng{authornamehash}{8430ee655132e7df2a0c659c423fcfc9}
+      \strng{authorfullhash}{8430ee655132e7df2a0c659c423fcfc9}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Trigonometry and the Global Positioning System}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb http://www.barrygraygillingham.com/Tutoring/Trig.html
+      \endverb
+      \verb{url}
+      \verb http://www.barrygraygillingham.com/Tutoring/Trig.html
+      \endverb
+    \endentry
+    \entry{ICER2016}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e28ee4876ad1cade000ffcb41a3dd949}{%
+           family={ICER},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {San José, Costa Rica}%
+      }
+      \list{publisher}{1}{%
+        {Mep-ICer}%
+      }
+      \strng{namehash}{e28ee4876ad1cade000ffcb41a3dd949}
+      \strng{fullhash}{e28ee4876ad1cade000ffcb41a3dd949}
+      \strng{bibnamehash}{e28ee4876ad1cade000ffcb41a3dd949}
+      \strng{authorbibnamehash}{e28ee4876ad1cade000ffcb41a3dd949}
+      \strng{authornamehash}{e28ee4876ad1cade000ffcb41a3dd949}
+      \strng{authorfullhash}{e28ee4876ad1cade000ffcb41a3dd949}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Matemática}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{Papiewski2016}{url}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=649817813a11c1672152c6ad4859a6ee}{%
+           family={Papiewski},
+           familyi={P\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{649817813a11c1672152c6ad4859a6ee}
+      \strng{fullhash}{649817813a11c1672152c6ad4859a6ee}
+      \strng{bibnamehash}{649817813a11c1672152c6ad4859a6ee}
+      \strng{authorbibnamehash}{649817813a11c1672152c6ad4859a6ee}
+      \strng{authornamehash}{649817813a11c1672152c6ad4859a6ee}
+      \strng{authorfullhash}{649817813a11c1672152c6ad4859a6ee}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Trigonometry involved in GPS}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://itstillworks.com/accurate-mph-speed-gps-2016.html
+      \endverb
+      \verb{url}
+      \verb https://itstillworks.com/accurate-mph-speed-gps-2016.html
+      \endverb
+    \endentry
+    \entry{Ramirez2015}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a50489f3485b5ef49e60c14f27be31db}{%
+           family={Ramirez},
+           familyi={R\bibinitperiod},
+           given={Mauricio},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {San José, Costa Rica}%
+      }
+      \list{publisher}{1}{%
+        {Siwo Editorial}%
+      }
+      \strng{namehash}{a50489f3485b5ef49e60c14f27be31db}
+      \strng{fullhash}{a50489f3485b5ef49e60c14f27be31db}
+      \strng{bibnamehash}{a50489f3485b5ef49e60c14f27be31db}
+      \strng{authorbibnamehash}{a50489f3485b5ef49e60c14f27be31db}
+      \strng{authornamehash}{a50489f3485b5ef49e60c14f27be31db}
+      \strng{authorfullhash}{a50489f3485b5ef49e60c14f27be31db}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Pendulum Noveno: develando la realidad}
+      \field{year}{2015}
+      \field{dateera}{ce}
+    \endentry
+    \entry{Vilca2016}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5080466aeff3d697492ba44a84506352}{%
+           family={Vilca},
+           familyi={V\bibinitperiod},
+           given={Yamil},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47de981333674119e61556fff3d16344}{%
+           family={Mamami},
+           familyi={M\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Lima, Perú}%
+      }
+      \list{publisher}{1}{%
+        {Lumbreras Editores}%
+      }
+      \strng{namehash}{f91fc0315030c18d5c4c3639c7bbda0b}
+      \strng{fullhash}{f91fc0315030c18d5c4c3639c7bbda0b}
+      \strng{bibnamehash}{f91fc0315030c18d5c4c3639c7bbda0b}
+      \strng{authorbibnamehash}{f91fc0315030c18d5c4c3639c7bbda0b}
+      \strng{authornamehash}{f91fc0315030c18d5c4c3639c7bbda0b}
+      \strng{authorfullhash}{f91fc0315030c18d5c4c3639c7bbda0b}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Álgebra Esencial}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

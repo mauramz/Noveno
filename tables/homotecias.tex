@@ -1,0 +1,23 @@
+\thisfloatsetup{
+  capbesidewidth=\marginparwidth,}
+\begin{table}[htbp]
+\centering
+\sffamily
+\small
+%\sansmath
+\arrayrulecolor{white}
+\vspace{0.2cm}
+  \rowcolors{2}{halfgray!15}{halfgray!5}
+ \setlength{\extrarowheight}{.4em}
+		\begin{tabularx}{0.99\textwidth}{l*{1}{>{\RaggedRight\arraybackslash}X}}		
+		\rowcolor{mycolor}\multicolumn{1}{l}{{\color{white}\textbf{Punto Original}}}&  \multicolumn{1}{l}{{\color{white}\textbf{Homotecia}}}\\
+	 \(P(x,y)\) & \(P^\prime(k\cdot x, k\cdot y)\)\\
+	 \rowcolor{mycolor}\multicolumn{1}{l}{{\color{white}\textbf{Segmento Original}}}&  \multicolumn{1}{l}{{\color{white}\textbf{Segmento Transformado}}}\\
+	 \(\overline{AB}\) & \(\overline{A^\prime B^\prime} = k\cdot \overline{AB}\)\\
+	 \rowcolor{mycolor}\multicolumn{1}{l}{{\color{white}\textbf{Razón de Homotecia}}}&  \multicolumn{1}{l}{{\color{white}\textbf{Fórmula}}}\\
+	 La razón de homotecia & \begin{minipage}[c]{2cm}\vspace{0.05in}\(k = \dfrac{A^\prime B^\prime}{AB}\)\vspace{0.05in}\end{minipage}\\
+		\end{tabularx}
+		\caption[Fórmulas de Homotecias]{Fórmulas de Homotecias} 
+		\label{tab:formhomotecias}
+\vspace{0.2cm}		
+\end{table}
