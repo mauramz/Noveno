@@ -1,0 +1,18 @@
+\documentclass[pstricks,border=1pt,10pt]{standalone}
+\usepackage{pst-plot}
+\usepackage{amsmath}
+\psset{xunit=15mm}
+\begin{document}
+\begin{pspicture}(-4.5,-1.25)(4.5,1.25)
+    \psaxes[yAxis=false,ticksize=0 -4pt]{<->}(0,0)(-4.5,-1)(4.5,1)
+    \pscircle[linecolor=black,fillcolor=black,fillstyle=solid](-2.5,0){2pt}
+    \rput(-2.5,0.75){$-\dfrac{5}{2}$}
+    \pscircle[linecolor=black,fillcolor=black,fillstyle=solid](-0.5,0){2pt}
+    \rput(-0.5,0.75){$-\dfrac{1}{2}$}
+    \pscircle[linecolor=black,fillcolor=black,fillstyle=solid](1.5,0){2pt}
+    \rput(1.5,-0.75){$\dfrac{3}{2}$}
+    \pscircle[linecolor=black,fillcolor=black,fillstyle=solid](3.5,0){2pt}
+    \rput(3.5,-0.75){$\dfrac{7}{2}$}
+%    \psline[linecolor=blue,arrowscale=1.25]{o-*}(.5,0)(2,0)
+\end{pspicture}
+\end{document}

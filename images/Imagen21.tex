@@ -1,0 +1,31 @@
+\documentclass[pstricks,border=1pt,10pt]{standalone}
+\usepackage{fontspec}
+\usepackage[math]{blindtext}
+
+\setmainfont{Minion Pro Display}[
+  ItalicFont={Minion Pro Italic},
+  BoldFont={Minion Pro Bold},
+  BoldItalicFont={Minion Pro Bold Italic}]
+
+\setsansfont{Myriad Pro}[
+  ItalicFont={Myriad Pro Italic},
+  BoldFont={Myriad Pro Bold},
+  BoldItalicFont={Myriad Pro Bold Italic}]
+\usepackage{pstricks,pst-node,pst-eucl}
+%\usepackage{amsmath}
+%\psset{xunit=15mm}
+\begin{document}
+\begin{pspicture}(-3.5,-0.75)(1.5,2.5)
+%\psset{PointSymbol=none}
+\pstTriangle(2;60){A}(1;0){C}(3;180){B}
+%\psset{PointName=none} 
+\pstRightAngle{B}{C}{A}
+\pcline[linestyle=none](B)(A)
+\aput{:U}{13}
+\pcline[linestyle=none](B)(C)
+\bput{:U}{12}
+\pcline[linestyle=none](A)(C)
+\Aput{x}
+%\pstGeonode[PointSymbol=none,PointNameSep=0.3em](1.3,2.3){a}
+\end{pspicture}
+\end{document}

@@ -1,0 +1,12 @@
+\documentclass[pstricks,border=1pt,10pt]{standalone}
+\usepackage{pst-plot}
+\usepackage{amsmath}
+\psset{xunit=15mm}
+\begin{document}
+\begin{pspicture}(-3.5,-0.65)(3.5,0.65)
+    \psaxes[yAxis=false,ticksize=0 -4pt]{<->}(0,0)(-3.5,-1)(3.5,1)
+    \pscircle[linecolor=black,fillcolor=black,fillstyle=solid](1.4,0){2pt}
+    \rput(1.4,0.5){$a$}
+%    \psline[linecolor=blue,arrowscale=1.25]{o-*}(.5,0)(2,0)
+\end{pspicture}
+\end{document}
