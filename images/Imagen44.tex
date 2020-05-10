@@ -1,0 +1,33 @@
+\documentclass[pstricks,border=1pt,10pt]{standalone}
+\usepackage{fontspec}
+\usepackage[math]{blindtext}
+
+\setmainfont{Minion Pro Display}[
+  ItalicFont={Minion Pro Italic},
+  BoldFont={Minion Pro Bold},
+  BoldItalicFont={Minion Pro Bold Italic}]
+
+\setsansfont{Myriad Pro}[
+  ItalicFont={Myriad Pro Italic},
+  BoldFont={Myriad Pro Bold},
+  BoldItalicFont={Myriad Pro Bold Italic}]
+\usepackage{pstricks,pst-node,pst-eucl}
+%\usepackage{amsmath}
+%\psset{xunit=15mm}
+\begin{document}
+	\begin{pspicture}(0,0)(5.125,4.25)
+	%\psset{PointSymbol=none}
+	\pstTriangle[linewidth=1.2pt](4,1.125){B}(4.75,3.75){C}(0.5,0.5){A}
+	%\psset{PointName=none}
+	%\pstRightAngle[linewidth=1.2pt]{C}{A}{B}
+	\pstMarkAngle[LabelSep=.85, MarkAngleRadius=.65]{C}{B}{A}{\(\beta\)}
+	\pstMarkAngle[LabelSep=.95, MarkAngleRadius=.75]{A}{C}{B}{\(\theta\)}
+	\pstMarkAngle[LabelSep=.95, MarkAngleRadius=.75]{B}{A}{C}{\(\alpha\)}
+	\pcline[linestyle=none](B)(A)
+	\Aput{c}
+	\pcline[linestyle=none](C)(B)
+	\Aput{a}
+	\pcline[linestyle=none](A)(C)
+	\Aput{b}
+	\end{pspicture}
+\end{document}

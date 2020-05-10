@@ -1,0 +1,23 @@
+%% Autor: Björn Ritterbecks 
+%% Letzte Aenderung: 15.06.2016 
+\thisfloatsetup{%
+  capbesidewidth=\marginparwidth}
+\begin{figure*}[htbp]
+  \centering
+\begin{pspicture}(-0.25,-0.25)(4,4)
+%\psset{PointSymbol=none}
+\pstTriangle[linewidth=1.2pt](3,3){H}(3,0){P}(0,0){K}
+%\psset{PointName=none} 
+\pstRightAngle[linewidth=1.2pt]{K}{P}{H}
+\pstMarkAngle[LabelSep=1.15, MarkAngleRadius=.75]{P}{K}{H}{\(50^\circ\)}
+\pcline[linestyle=none](K)(H)
+\Aput{\(25\) cm}
+\pcline[linestyle=none](P)(K)
+\Aput{y}
+\pcline[linestyle=none](H)(P)
+\Aput{x}
+\end{pspicture}
+  \caption[Triángulo KPH, ejercicio resuelto no. 1]{Triángulo rectángulo KPH, ejercicio resuelto no. 1.}
+  \label{fig:imagen33}
+  \vspace{-0pt}
+\end{figure*}

@@ -1,0 +1,31 @@
+\documentclass[pstricks,border=1pt,10pt]{standalone}
+\usepackage{fontspec}
+\usepackage[math]{blindtext}
+
+\setmainfont{Minion Pro Display}[
+  ItalicFont={Minion Pro Italic},
+  BoldFont={Minion Pro Bold},
+  BoldItalicFont={Minion Pro Bold Italic}]
+
+\setsansfont{Myriad Pro}[
+  ItalicFont={Myriad Pro Italic},
+  BoldFont={Myriad Pro Bold},
+  BoldItalicFont={Myriad Pro Bold Italic}]
+\usepackage{pstricks,pst-node,pst-eucl}
+%\usepackage{amsmath}
+%\psset{xunit=15mm}
+\begin{document}
+	\begin{pspicture}(0,0)(3,4)
+	%\psset{PointSymbol=none}
+	\pstTriangle[linewidth=1.2pt](2.5,3.5){B}(2.5,0.5){C}(0.5,0.5){A}
+	%\psset{PointName=none} 
+	\pstRightAngle[linewidth=1.2pt]{A}{C}{B}
+	\pstMarkAngle[LabelSep=1.25, MarkAngleRadius=.95]{A}{B}{C}{\(\theta\)}
+	\pcline[linestyle=none](A)(B)
+	\aput{:U}{41}
+	\pcline[linestyle=none](B)(C)
+	\Aput{a}
+	\pcline[linestyle=none](C)(A)
+	\Aput{9}
+	\end{pspicture}
+\end{document}

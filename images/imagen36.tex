@@ -1,0 +1,23 @@
+%% Autor: Björn Ritterbecks 
+%% Letzte Aenderung: 15.06.2016 
+\thisfloatsetup{%
+  capbesidewidth=\marginparwidth}
+\begin{figure*}[htbp]
+  \centering
+\begin{pspicture}(-0.25,-0.25)(3,4)
+%\psset{PointSymbol=none}
+\pstTriangle[linewidth=1.2pt](0,0){R}(0,3.5){S}(2.75,0){W}
+%\psset{PointName=none} 
+\pstRightAngle[linewidth=1.2pt]{S}{R}{W}
+\pstMarkAngle[LabelSep=1.15, MarkAngleRadius=.75]{R}{S}{W}{\(36^\circ\)}
+\pcline[linestyle=none](W)(R)
+\Aput{\(57\) cm}
+\pcline[linestyle=none](R)(S)
+\Aput{n}
+\pcline[linestyle=none](S)(W)
+\Aput{z}
+\end{pspicture}
+  \caption[Triángulo RSW, ejercicio resuelto no. 4]{Triángulo rectángulo RSW, ejercicio resuelto no. 4.}
+  \label{fig:imagen36}
+  \vspace{-0pt}
+\end{figure*}

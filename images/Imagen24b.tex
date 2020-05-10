@@ -1,0 +1,50 @@
+\documentclass[pstricks,border=1pt,10pt]{standalone}
+\usepackage{fontspec}
+\usepackage[math]{blindtext}
+ 
+\setmainfont{Minion Pro Display}[
+  ItalicFont={Minion Pro Italic},
+  BoldFont={Minion Pro Bold},
+  BoldItalicFont={Minion Pro Bold Italic}]
+
+\setsansfont{Myriad Pro}[
+  ItalicFont={Myriad Pro Italic},
+  BoldFont={Myriad Pro Bold},
+  BoldItalicFont={Myriad Pro Bold Italic}]
+\usepackage{pstricks,pst-node,pst-eucl}
+%\usepackage{amsmath}
+%\psset{xunit=15mm}
+\begin{document}
+\begin{pspicture}(-1,-1)(5.5,4)
+\psaxes[linewidth=1.2pt,labels=none]{<->}(0,0)(-1,-1)(5,4)
+\psline[linestyle=dashed](0,1)(1,1)(1,0)
+\psline[linestyle=dashed](0,3)(4,3)(4,0)
+
+\definecolor{mycolor}{RGB}{0,108,217}
+
+\pstTriangle[fillstyle=solid, fillcolor=mycolor!70!white](1,1){A}(4,1){C}(4,3){B}
+\pstRightAngle{B}{C}{A}
+\pcline[linestyle=none](C)(A)
+\Aput{\(x_B-x_A\)}
+
+\psline[linestyle=solid](4,1)(4,3)
+\psline[linestyle=solid](1,1)(4,1)
+
+\psline[linestyle=solid](1,1)(4,3)
+\pcline(1,1)(4,3)
+\aput{:U}{\(dAB\)}
+
+\psdots(1,1)(4,3)
+
+\rput(1,-0.35){\(x_A\)}
+\rput(-0.35,1){\(y_A\)}
+
+\rput(4,-0.35){\(x_B\)}
+\rput(-0.35,3){\(y_B\)}
+\rput(4.75,2){\(y_B-y_A\)}
+
+%\rput(0.75,1.25){\(A\)}
+%\rput(4.25,3.25){\(B\)}
+
+\end{pspicture}
+\end{document}

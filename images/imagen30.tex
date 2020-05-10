@@ -1,0 +1,23 @@
+%% Autor: Björn Ritterbecks 
+%% Letzte Aenderung: 15.06.2016 
+\thisfloatsetup{%
+  capbesidewidth=\marginparwidth}
+\begin{figure*}[htbp]
+  \centering
+\begin{pspicture}(0,0)(4,6)
+%\psset{PointSymbol=none}
+\pstTriangle[linewidth=1.2pt](3,5.5){B}(3,0){C}(0,0){A}
+%\psset{PointName=none} 
+\pstRightAngle[linewidth=1.2pt]{A}{C}{B}
+\pstMarkAngle[LabelSep=1.25, MarkAngleRadius=.95]{A}{B}{C}{\(\alpha\)}
+\pcline[linestyle=none](A)(B)
+\aput{:U}{25}
+\pcline[linestyle=none](B)(C)
+\Aput{a}
+\pcline[linestyle=none](C)(A)
+\Aput{7}
+\end{pspicture}
+  \caption[Triángulo ABC, ejercicio resuelto no. 4]{Triángulo rectángulo ABC, ejercicio resuelto no. 4.}
+  \label{fig:imagen30}
+  \vspace{-0pt}
+\end{figure*}

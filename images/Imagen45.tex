@@ -1,0 +1,25 @@
+%% Autor: Björn Ritterbecks 
+%% Letzte Aenderung: 15.06.2016 
+\thisfloatsetup{%
+  capbesidewidth=\marginparwidth}
+\begin{figure*}[htbp]
+  \centering
+  \begin{pspicture}(0,0)(5.125,4.25)
+	%\psset{PointSymbol=none}
+	\pstTriangle[linewidth=1.2pt](3.75,3.5){B}(5,0.75){C}(0,0){A}
+	%\psset{PointName=none}
+	%\pstRightAngle[linewidth=1.2pt]{C}{A}{B}
+	\pstMarkAngle[LabelSep=1.15, MarkAngleRadius=.65]{A}{B}{C}{\(105^\circ\)}
+	\pstMarkAngle[LabelSep=.95, MarkAngleRadius=.65]{B}{C}{A}{\(\theta\)}
+	\pstMarkAngle[LabelSep=1.15, MarkAngleRadius=.65]{C}{A}{B}{\(33^\circ\)}
+	\pcline[linestyle=none](A)(B)
+	\Aput{c}
+	\pcline[linestyle=none](B)(C)
+	\Aput{a}
+	\pcline[linestyle=none](C)(A)
+	\Aput{37.9}
+  \end{pspicture}
+  \caption[Triángulo ABC, Ejercicio Resuelto No. 1]{Triángulo ABC, Ejercicio Resuelto No. 1.}
+  \label{fig:imagen45}
+  \vspace{-0pt}
+\end{figure*}

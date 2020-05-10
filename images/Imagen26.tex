@@ -1,0 +1,32 @@
+\documentclass[pstricks,border=1pt,10pt]{standalone}
+\usepackage{fontspec}
+\usepackage[math]{blindtext}
+
+\setmainfont{Minion Pro Display}[
+  ItalicFont={Minion Pro Italic},
+  BoldFont={Minion Pro Bold},
+  BoldItalicFont={Minion Pro Bold Italic}]
+
+\setsansfont{Myriad Pro}[
+  ItalicFont={Myriad Pro Italic},
+  BoldFont={Myriad Pro Bold},
+  BoldItalicFont={Myriad Pro Bold Italic}]
+\usepackage{pstricks,pst-node,pst-eucl}
+%\usepackage{amsmath}
+%\psset{xunit=15mm}
+\begin{document}
+\begin{pspicture}(0,0)(5,7)
+\psline[linewidth=1.2pt](0.75,5.5)(2.5,6.5)(3.75,6)(0.75,5.5)
+\psline[linewidth=1.2pt](0.75,5.5)(3.25,0.5)
+\psline[linewidth=1.2pt](2.5,6.5)(3.25,0.5)
+\psline[linewidth=1.2pt](3.75,6)(3.25,0.5)
+
+\psdots(0.75,5.5)(2.5,6.5)(3.75,6)(3.25,0.5)
+
+\rput(0.5,5.5){\(P\)}
+\rput(4,6){\(R\)}
+\rput(2.25,6.75){\(Q\)}
+\rput(3.25,0.25){\(S\)}
+
+\end{pspicture}
+\end{document}

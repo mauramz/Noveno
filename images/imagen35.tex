@@ -1,0 +1,23 @@
+%% Autor: Björn Ritterbecks 
+%% Letzte Aenderung: 15.06.2016 
+\thisfloatsetup{%
+  capbesidewidth=\marginparwidth}
+\begin{figure*}[htbp]
+  \centering
+\begin{pspicture}(-0.25,-0.25)(4,4)
+%\psset{PointSymbol=none}
+\pstTriangle[linewidth=1.2pt](4,0){M}(1.25,2){L}(0,0){K}
+%\psset{PointName=none} 
+\pstRightAngle[linewidth=1.2pt]{K}{L}{M}
+\pstMarkAngle[LabelSep=1.15, MarkAngleRadius=.75]{M}{K}{L}{\(48^\circ\)}
+\pcline[linestyle=none](M)(K)
+\Aput{x}
+\pcline[linestyle=none](L)(M)
+\Aput{z}
+\pcline[linestyle=none](K)(L)
+\Aput{\(175\) cm}
+\end{pspicture}
+  \caption[Triángulo MLK, ejercicio resuelto no. 3]{Triángulo rectángulo MLK, ejercicio resuelto no. 3.}
+  \label{fig:imagen35}
+  \vspace{-0pt}
+\end{figure*}
